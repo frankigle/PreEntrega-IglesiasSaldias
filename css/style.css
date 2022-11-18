@@ -1,0 +1,147 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #264653;
+} 
+
+/* header */
+
+header {
+    background-color: #264653;
+    background-image: url(../imgProyecto/pirineosPano.jpg) ;
+    background-size: cover;
+    align-items: center;
+}
+header .logo{
+    display: flex;
+    flex-direction: column; 
+  
+    align-items: center;
+}
+header .logo img{
+    padding: auto;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+}
+header .logo h2{
+    display: none;
+}
+
+/* Main */
+.container {
+    background-color: #e9c46a;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;   */
+    padding-bottom: 30px;  
+
+}
+.container h1{
+    text-align: center;
+}
+.container p{
+    text-align: center;
+    font-size: 18px;
+}
+.grid{
+    
+    display: grid;
+    grid-template-areas: 
+    "equipo historia"
+    "ruta contacto";
+}
+.hojaDeRuta{
+    grid-area: ruta;
+}
+.contacto{
+    grid-area: contacto;
+}
+.historia{
+    grid-area: historia;
+}
+.equipo{
+    grid-area: equipo;
+}
+.flexItem {
+    background-color: #e76f51;
+    overflow: auto;
+    display: inline;
+    width: auto;
+    height: 200px;
+    text-align: center;
+    border: 5px solid #2a9d8f;
+    margin: 5px;
+}
+.flexItem h3{
+    font-weight: bold;
+    font-family: 'Fasthand';
+    font-size: 30px;
+    color: black;
+   /*  align-items:  center; */
+}
+.flexItem img{
+    display: inline;
+    width: auto;
+    height: 150px;
+    }
+
+
+.flexItem p{
+    font-size: 10px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer{
+    display: flex;
+    background-color: gainsboro;
+    border: 10px solid #2a9d8f;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.footer .contactoFoot h4{
+    text-align: center;
+    
+} 
+.ulFoot a{
+    text-decoration: none;
+}
+.redesSociales a{
+    text-decoration: none;
+}
+h5{
+    text-align: center;
+    font-size: large;
+}
+
+@media screen and (min-width:768px){
+    body{
+        background-color: blue;
+    }
+    header .logo{
+        display: flex;
+    }
+    header .logo h2{
+        display: inline;
+        font-family: 'Fasthand';
+        font-size: 50px;
+        text-align: center;
+    }
+}

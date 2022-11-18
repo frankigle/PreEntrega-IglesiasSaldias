@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- linkeado hoja de estilo -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+    <!-- linkeado bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../imgProyecto/logo2.jpg" alt="logo">
+            <h2>Viajando a Pedal</h2>
+        </div>
+    </header>
+    <!-- barra menu -->
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand active" aria-current="page" href="./index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./html/equipo.html">Equipo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/hojaDeRuta.html">Hoja de Ruta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/contacto.html" >Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imgProyecto/fotos/lubiTunel.jpg" class="d-block w-100" alt="lubiTunel">
+            </div>
+            <div class="carousel-item">
+                <img src="./imgProyecto/fotos/bicisCarpa.jpg" class="d-block w-100" alt="bicisCarpa">
+            </div>
+            <div class="carousel-item">
+                <img src="./imgProyecto/fotos/caminoCampo.jpg" class="d-block w-100" alt="caminoCampo">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h1>Bienvenidos!!</h1>
+        <p>Gracias por visitar nuestro sitio, desde aqui podra ingresar a todo nuestro contenido.</p>
+        <div class="grid">
+            <div class="flexItem equipo">
+                <a href="../HTML/equipo.html"><img src="./imgProyecto/fotos/bicisCarpaRio.jpg" alt="equipo"></a>
+                <h3>Equipo</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos voluptatibus dicta architecto atque veritatis eligendi deleniti nulla voluptatum libero, consectetur corporis mollitia doloremque necessitatibus eius commodi placeat tempora tempore iste.</p> 
+            </div> 
+            <div class="flexItem historia">
+                <a href="../HTML/historia.html"><img src="./imgProyecto/fotos/volando.jpg" alt="historia">  </a> 
+                <h3>Historia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum esse quo ea earum, nulla, molestias exercitationem, quisquam consectetur voluptatem laborum?</p>
+            </div>
+            <div class="flexItem hojaDeRuta">
+                <a href="../HTML/hojaDeRuta.html"><img src="./imgProyecto/EUROVELO.jpg" alt="hojaDeRuta"></a>
+                <h3>Hoja de Ruta</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum esse quo ea earum, nulla, molestias exercitationem, quisquam consectetur voluptatem laborum?</p>
+            </div>
+            <div class="flexItem contacto">
+                <a href="../HTML/contacto.html"><img src="./imgProyecto/Zapatofono.jpg" alt="Contacto"></a>
+                <h3>Contacto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias illum esse quo ea earum, nulla, molestias exercitationem, quisquam consectetur voluptatem laborum?</p>
+            </div>
+        </div>
+        
+    </main>
+
+    
+      
+    
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="contactoFoot">
+            <h4>Contacto</h4>
+            <p>E-Mail: a@a.com</p>
+            <p>Telefono: : 03327-442721</p>
+            <p>Direccion: Av.Libertador 1234</p>
+        </div>
+        <div>
+            <h4>Menu</h4>
+            <ul class="ulFoot">
+                <li><a href="../index.html">Menu</a></li>
+                <li><a href="../html/equipo.html">Equipo</a></li>
+                <li><a href="../html/historia.html">Historia</a></li>
+                <li><a href="../html/hojaDeRuta.html">Hoja de Ruta</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+                
+                
+            </ul>
+
+        </div>  
+        <div class="redesSociales">
+            <h5>Seguinos</h5>
+            <p><a href="https://www.facebook.com/">Facebook</a></p>
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+            <p><a href="https://twitter.com/">Twitter</a></p>
+        </div>  
+    </footer>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
