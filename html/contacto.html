@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">   
     <!-- linkeado hoja de estilo -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- google fonts -->
@@ -20,7 +22,7 @@
     <header>
         <div class="logo">
             <img src="../imgProyecto/logo2.jpg" alt="logo">
-            <h2>Viajando a Pedal</h2>
+            <h2>Pedaleando al Mar</h2>
         </div>
     </header>
     <!-- barra menu -->
@@ -39,16 +41,62 @@
                 <a class="nav-link" href="./historia.html">Historia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./hojaDeRuta.html">Hoja de Ruta</a>
+                <a class="nav-link"  href="./hojaDeRuta.html">Hoja de Ruta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contacto.html" >Contacto</a>
+                <a class="nav-link active" aria-current="page" href="./contacto.html" >Contacto</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
+    <main class="container contacto">
+        <h1>Contactame</h1>
+        <p>Muchas gracias por visitar nuestro sitio. Esperamos tus comentarios.</p>
+        <div class="flexItem formulario">
+            <form action="enviar.php" method="get">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required><br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" required><br>
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <select name="nacionalidad" id="nacionalidad" required>
+                        <option value="arg" id="arg">Argentino</option>
+                         <option value="mex">Mexicano</option>
+                         <option value="ale" selected>Aleman</option>
+                         <option value="col" selected>Colombiano</option>
+                         <option value="select" selected disabled>seleccione</option>
+                 </select>
+                </fieldset>
+                <fieldset>
+                    <legend> Datos de Contacto</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required><br>
+                    <label for="telefono">Numero Telefonico:</label>
+                    <input type="number" name="telefono" id="telefono" required><br>
+                    <label for="pregunta">Seleccione forma de contacto:</label>
+                    <input type="checkbox" name="pregunta" id="telefono">Telefono
+                    <input type="checkbox" name="pregunta" id="email">E-mail
+                    
+                 </fieldset>
+                 <fieldset>
+                    <legend>comentarios</legend>
+                    <label for="comentario">Deje su Mensaje:</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br>
+                </fieldset>
+                <label for="term">Acepta Term. y Cond.</label>
+                <input type="radio" name="term" id="si">Si
+                <input type="radio" name="term" id="no">No
+                <input type="submit" value="Enviar ahora">
+                <input type="reset" value="restablecer">
 
+                 
+
+            </form>
+        </div>
+    </main>
 
 
 
@@ -82,10 +130,6 @@
             <p><a href="https://twitter.com/">Twitter</a></p>
         </div>  
     </footer>
-
-
-
-
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>

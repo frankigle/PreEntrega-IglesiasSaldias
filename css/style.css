@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color:  #264653;
+   background-color: #e9c46a;
 } 
 
 /* header */
@@ -34,6 +34,10 @@ header .logo h2{
 }
 
 /* Main */
+#carouselExampleIndicators{
+    padding-top: 5px;
+}
+
 .container {
     background-color: #e9c46a;
     /* display: flex;
@@ -98,11 +102,41 @@ header .logo h2{
 }
 
 
+/*     Equipo       */
+#equipoFlex{
+    background-color: #e9c46a;
+    display: flex;
+    flex-direction: column;
+}
+#equipoFlex .secEquipo{
+
+    width: auto;
+    height: 350px;
+    overflow: scroll;
+    background-color: #e76f51;
+    border: 5px solid #2a9d8f;
+    margin: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#equipoFlex .secEquipo h2{
+    font-family: ;
+    text-align: center;
+}
+#equipoFlex .secEquipo .fotosEquipo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#equipoFlex .secEquipo .fotosEquipo img{
+    gap: 3px;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
 
 
-
-
-
+}
 
 
 
@@ -115,6 +149,9 @@ header .logo h2{
     border: 10px solid #2a9d8f;
     flex-flow: row;
     justify-content: space-around;
+}
+.footer .contactoFoot{
+    font-size: 15px;
 }
 .footer .contactoFoot h4{
     text-align: center;
