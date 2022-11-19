@@ -5,8 +5,8 @@
     box-sizing: border-box;
 }
 
-body{
-   background-color: #e9c46a;
+body {
+   color: #e9c46a;
 } 
 
 /* header */
@@ -40,9 +40,6 @@ header .logo h2{
 
 .container {
     background-color: #e9c46a;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;   */
     padding-bottom: 30px;  
 
 }
@@ -137,6 +134,45 @@ header .logo h2{
 
 
 }
+
+
+
+
+
+
+
+/* Historia */
+#historiaMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #e9c46a;
+    padding-bottom: 30px;
+}
+.todoComenzo{
+    border: 8px solid #2a9d8f;
+}
+.todoComenzo h2{
+    text-align: center;
+}
+.todoComenzo p{
+    padding: 0 20px;
+}
+
+.gridHistoria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gridHistoria img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
 
 
 
